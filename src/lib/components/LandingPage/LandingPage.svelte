@@ -7,7 +7,8 @@
 	<p>Forever under construction...</p>
 </div>
 
-<style>
+<style lang="scss">
+	@import '../../../theme/_vars.scss';
 	.landing-page {
 		padding: 20px;
 		display: flex;
@@ -15,15 +16,15 @@
 		align-items: center;
 		justify-content: center;
 		height: 100%;
-	}
 
-	.landing-page img {
-		margin-bottom: 16px;
-	}
+		img {
+			margin-bottom: 16px;
+		}
 
-	.landing-page .welcome-text {
-		font-size: 2rem;
-		font-weight: bold;
-		margin-bottom: 16px;
+		.welcome-text {
+			font-size: 2rem;
+			font-weight: $medWeight;
+			margin-bottom: 16px;
+		}
 	}
 </style>

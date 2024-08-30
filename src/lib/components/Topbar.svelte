@@ -30,7 +30,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.topbar {
 		background-color: #2463eb;
 		color: #ffb400;
@@ -57,8 +57,6 @@
 	}
 
 	.site-name {
-		font-size: 1.5rem; /* 2xl */
-		font-weight: bold;
 		margin-left: 8px;
 	}
 

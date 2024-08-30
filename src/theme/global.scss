@@ -5,7 +5,7 @@
 @import './_vars.scss';
 /* base styles */
 :root {
-	font-family: 'Sequel Sans', sans-serif;
+	font-family: $brandFont;
 }
 
 :global(::selection) {
