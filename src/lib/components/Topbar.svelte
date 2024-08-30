@@ -14,7 +14,7 @@
 		<div class="logo-container">
 			<!-- Flex container for logo and text -->
 			<div class="logo">
-				<img src="/images/seria-logo-color.png" alt="Seria Logo" width="60" height="60" />
+				<img src="/images/seria-logo-color-outlined.png" alt="Seria Logo" width="60" height="60" />
 			</div>
 			<div class="site-name">
 				Seria <br /> Solutions
@@ -52,7 +52,6 @@
 	}
 
 	.logo {
-		background-color: white;
 		padding: 8px;
 		flex-shrink: 0;
 	}
