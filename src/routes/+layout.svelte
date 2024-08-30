@@ -21,6 +21,7 @@
 	@import '../theme/_vars.scss';
 
 	main {
+		font-family: $brandFont;
 		flex: 1;
 		display: block;
 		width: 100%;

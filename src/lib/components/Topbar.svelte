@@ -31,50 +31,54 @@
 </div>
 
 <style lang="scss">
+	@import '../../theme/_vars.scss';
 	.topbar {
+		font-family: $brandFont;
 		background-color: #2463eb;
 		color: #ffb400;
 		padding: 8px;
 		min-width: min-content;
 		padding: 20px;
-	}
 
-	.container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0 auto;
-	}
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 auto;
+		}
 
-	.logo-container {
-		display: flex;
-		align-items: center;
-	}
+		.logo-container {
+			display: flex;
+			align-items: center;
 
-	.logo {
-		padding: 8px;
-		flex-shrink: 0;
-	}
+			.logo {
+				padding: 8px;
+				flex-shrink: 0;
+			}
 
-	.site-name {
-		margin-left: 8px;
-	}
+			.site-name {
+				margin-left: 8px;
+			}
+		}
 
-	nav .nav-links {
-		display: flex;
-		gap: 16px; /* Space between nav items */
-		margin-bottom: 24px;
-		margin-left: 24px;
-		list-style: none;
-		padding: 0;
-	}
+		nav {
+			.nav-links {
+				display: flex;
+				gap: 16px; /* Space between nav items */
+				margin-bottom: 24px;
+				margin-left: 24px;
+				list-style: none;
+				padding: 0;
 
-	nav .nav-links a {
-		text-decoration: none;
-		color: inherit;
-	}
+				a {
+					text-decoration: none;
+					color: inherit;
 
-	nav .nav-links a:hover {
-		text-decoration: underline;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
 	}
 </style>
