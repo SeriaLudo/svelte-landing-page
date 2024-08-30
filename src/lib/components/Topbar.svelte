@@ -36,13 +36,13 @@
 		color: #ffb400;
 		padding: 8px;
 		min-width: min-content;
+		padding: 20px;
 	}
 
 	.container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		max-width: 1200px;
 		margin: 0 auto;
 	}
 
