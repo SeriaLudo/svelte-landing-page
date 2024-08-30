@@ -1,0 +1,195 @@
+/* 
+	Name: Global Styles
+    Notes:
+*/
+
+/* base styles */
+:root {
+	font-family: 'Sequel Sans', sans-serif;
+}
+
+:global(::selection) {
+	color: white;
+	background: black;
+}
+
+:global(body),
+:global(#theme-container),
+:global(#app-content) {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	overscroll-behavior-x: contain;
+}
+
+:global(body) {
+	min-height: 100vh;
+	margin: 0 !important;
+	background-color: white;
+	font-family: $brandFont !important;
+	font-display: swap;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+}
+
+:global(#app-content) {
+	min-height: 100vh;
+}
+
+:global(body::before) {
+	content: '';
+	width: 80vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 10vw;
+	z-index: -1;
+	opacity: 0.05;
+}
+
+:global(h1) {
+	//text-shadow: 0px 1px 4px rgb(0 0 0 / 60%);
+	-webkit-font-smoothing: antialiased;
+}
+
+:global(.error) {
+	color: $error !important;
+}
+
+:global(.success) {
+	color: $success !important;
+}
+
+// show on mobile and hide on desktop
+:global(.mobile-item) {
+	display: none !important;
+	@include devices(md) {
+		display: grid !important;
+	}
+}
+
+// show on desktop and hide on mobile
+:global(.desktop-item) {
+	display: block;
+	@include devices(md) {
+		display: none !important;
+	}
+}
+
+#app-content {
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+
+::selection {
+	color: $white;
+	background: $black;
+}
+
+/* Dark Mode Rules */
+:global(html.dark-mode) {
+	::selection {
+		color: $black;
+		background: $white;
+	}
+
+	:global(body) {
+		background-color: $black;
+	}
+
+	:global(h1) {
+		color: $white;
+		//text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+	}
+
+	:global(p) {
+		color: white;
+	}
+}
+
+/* base styles */
+
+/* typography */
+
+:global(p) {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+:global(h1, h2, p) {
+	font-family: $brandFont;
+	font-weight: 300;
+}
+
+p {
+	line-height: 1.5;
+}
+
+:global(a) {
+	color: $linkLight;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+:global(a:hover) {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 86px;
+	text-align: center;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
+
+// smui dialog
+:global(.mdc-dialog__title) {
+	font-family: $brandFont;
+	font-weight: 200;
+	font-size: 24px !important;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 30px;
+}
+
+:global(.mdc-dialog) {
+	z-index: 9 !important;
+}
+
+// smui text fields
+:global(.mdc-text-field .mdc-floating-label) {
+	font-size: 14px;
+}
+
+/* Dark Mode Rules */
+:global(html.dark-mode) {
+	:global(body) {
+		background-image: linear-gradient(to bottom right, #2d2d2d, #202323);
+	}
+	:global(::selection) {
+		color: black;
+		background: white;
+	}
+	:global(a) {
+		color: $linkDark;
+	}
+	// field labels
+	:global(.mdc-text-field .mdc-floating-label) {
+		color: #777 !important;
+	}
+
+	a:hover {
+		background-color: $white;
+		color: $black;
+	}
+
+	::selection {
+		color: $black;
+		background: $white;
+	}
+}
+/* typography */

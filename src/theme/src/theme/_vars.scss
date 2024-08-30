@@ -1,0 +1,44 @@
+/* 
+	Name: All Styling Variables
+    Notes:
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sequel+Sans:wght@400;700&display=swap');
+
+// interactive
+$linkLight: #6ca5f1;
+$linkDark: #91baff;
+
+//fonts
+$brandFont: 'Sequel Sans';
+$secondaryFont: 'Roboto';
+$lightWeight: 100;
+$medWeight: 500;
+$strongWeight: 600;
+
+// interactive
+$linkColorLight: #6ca5f1;
+
+// Colors
+$white: #ffffff;
+$black: #000;
+$error: #f44336;
+$warning: #ff6c00;
+$yellow: #ff9800;
+$fuchsia: #ff00a2;
+$success: #4aaf4f;
+$inactive: #aaa;
+
+// Vibes
+$hotCold: linear-gradient(to bottom right, #ca0750, #01327b);
+$hot: linear-gradient(to bottom right, #ca0750, #7b0101);
+$hotNeutral: linear-gradient(to bottom right, #ca0750, #7b5d01);
+$coldHot: linear-gradient(to bottom right, #078cca, #5d017b);
+$cold: linear-gradient(to bottom right, #078cca, #01327b);
+$coldNeutral: linear-gradient(to bottom right, #078cca, #7b5d01);
+$neutralCold: linear-gradient(to bottom right, #7aca07, #01327b);
+$neutral: linear-gradient(to bottom right, #7aca07, #017b2f);
+$neutralHot: linear-gradient(to bottom right, #7aca07, #7b0101);
+
+$primaryColor: #fff;
+$secondaryColor: #000;
